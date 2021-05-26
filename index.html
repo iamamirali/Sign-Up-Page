@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>login page</title>
+ <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <div id="container">
+  <h1 id="title">Sign up in NO WHERE</h1>
+  <h2 id="welcome"></h2>
+  <form action="" id="theForm">
+   <div id="firstPart">
+    <label for="first">First Name</label> <br>
+    <input type="text" id="first" class="sepInps">
+   </div>
+   <div id="LastPart">
+    <label for="last">Last Name</label> <br>
+    <input type="text" id="last" class="sepInps">
+   </div>
+
+   <div id="userPart" class="imp">
+    <label for="username">Username *</label> <br>
+    <input type="text" id="username" class="inputs" placeholder="">
+   </div>
+   
+   <div id="passPart" class="imp">
+    <label for="pass">Password *</label> <br>
+    <input type="password" id="pass" class="inputs" placeholder="">
+    <br>
+    <span id="passErr"></span>
+   </div>
+   
+   <div id="emailPart" class="imp">
+    <label for="email">Email *</label> <br>
+    <input type="text" id="email" class="inputs" placeholder="">
+    <br>
+    <span id="emErr"></span>
+   </div>
+
+   <input type="submit" value="Submit" id="submit">
+
+  </form>
+ </div>
+ <script src="./app.js"></script>
+</body>
+</html>

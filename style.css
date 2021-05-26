@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@500&family=RocknRoll+One&display=swap");
+
+* {
+  margin: 5px;
+  padding: 0;
+  transition: all 0.5s;
+}
+body {
+  background-color: var(--white-color);
+}
+:root {
+  --dark-color: #2d4059;
+  --yellow-color: #ffb400;
+  --white-color: #f6f6f6;
+}
+.shadow,
+.passShadow,
+.emailShadow {
+  box-shadow: 0px 0px 8px rgb(168, 7, 7);
+}
+#container {
+  width: 50vw;
+  padding: 25px;
+  text-align: center;
+  margin: 50px auto 10px auto;
+  background-color: var(--yellow-color);
+  border-radius: 15px;
+  color: var(--dark-color);
+}
+#title,
+#welcome {
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 2rem;
+  margin: 10px auto 30px auto;
+}
+#theForm {
+  font-family: "Recursive", sans-serif;
+  font-size: 1.3rem;
+}
+.inputs,
+.sepInps {
+  width: 300px;
+  margin: 5px auto 15px auto;
+  color: black;
+  border-style: none;
+  padding: 8px;
+  border-radius: 8px;
+  font-family: "Recursive", sans-serif;
+  font-size: 1.1rem;
+  background-color: var(--white-color);
+}
+#submit {
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  margin-top: 10px;
+  border-style: none;
+}
+
+.inputs:hover,
+.sepInps:hover {
+  background-color: rgb(223, 223, 223);
+  padding: 12px;
+}
+#submit:hover {
+  background-color: #496b97;
+  color: var(--white-color);
+}
+#passErr,
+#emErr {
+  font-size: 0.9rem;
+  color: rgb(168, 7, 7);
+}
+#passPart {
+  margin-bottom: 20px;
+}
+#pass,
+#email {
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 650px) {
+  #container {
+    width: 85%;
+    padding: 10px;
+    margin: 10px auto 10px auto;
+  }
+  #title,
+  #welcome {
+    font-size: 1.3rem;
+    margin: 5px auto 15px auto;
+  }
+  #theForm {
+    font-size: 1rem;
+  }
+  .inputs,
+  .sepInps {
+    width: 90%;
+    margin: 3px auto 10px auto;
+    font-size: 0.8rem;
+  }
+  #submit {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  #passErr,
+  #emErr {
+    font-size: 0.7rem;
+    color: rgb(168, 7, 7);
+  }
+  #passPart {
+    margin-bottom: 10px;
+  }
+  #pass,
+  #email {
+    margin-bottom: 0px;
+  }
+}
